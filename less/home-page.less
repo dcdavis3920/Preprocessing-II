@@ -71,17 +71,26 @@
 }// home
 @media(max-width: 500px){
    .content-section{
-    flex-direction:column-reverse;
+    flex-direction:column;
     align-items: center;
-    .text-content{
+    border:red solid 2px;
+   }//closes content sec
+   .text-content{
+     border:blue solid 2px;
+     width:100%;
+   }
+    .content-pick{
       display:flex;
-      flex-direction:column-reverse;
-    }
-  
-  }//closes text-content
-  .content-pick{
-      display:flex;
-      flex-direction: column;
+      flex-direction:column;
+      border:red solid 2px;
       align-items: center;
-  }//closes content-pick
-}//closes media
+      .destination{
+        border:blue;
+        width: 100%;
+        margin:10% 0;
+
+      }//closes destination
+   
+    }//closes content pick
+
+}// closes media
