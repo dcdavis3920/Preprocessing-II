@@ -1,3 +1,12 @@
+
+
+      .top{
+        width:55%;
+        border:solid orange 2px;
+        margin: 0 auto;
+      }
+
+
 .home {
 
   .content-section {
@@ -5,6 +14,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 
    
     
@@ -59,3 +69,19 @@
     }
   }
 }// home
+@media(max-width: 500px){
+   .content-section{
+    flex-direction:column-reverse;
+    align-items: center;
+    .text-content{
+      display:flex;
+      flex-direction:column-reverse;
+    }
+  
+  }//closes text-content
+  .content-pick{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+  }//closes content-pick
+}//closes media

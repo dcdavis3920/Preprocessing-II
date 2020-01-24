@@ -1,1 +1,28 @@
 // Navigation Styles here
+.fun{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    border:red solid 2px;
+    width:55%;
+    margin: 0 auto 2% auto;
+    .bus{
+        width:45%;
+        border:blue solid 2px;
+        display:flex;
+        justify-content: space-evenly;
+    }//closes bus
+}//closes fun
+@media(max-width: 500px){
+    .fun{
+        flex-direction:column-reverse;
+        width:70%;
+        .bus{
+            width:80%;
+        }//closes fun in media
+
+
+
+    }//closes fun
+}// media
